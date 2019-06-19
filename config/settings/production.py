@@ -8,7 +8,7 @@ SECRET_KEY = env('DJANGO_SECRET_KEY')
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
 # For now, we are just allowing ANY hosts at herokuapp.com
 # ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["pecproto.jessecodes.me"])
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['pecproto.herokuapp.com', 'pecproto.jessecodes.me']
 
 # DATABASES
 # ------------------------------------------------------------------------------
