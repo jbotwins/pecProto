@@ -6,6 +6,7 @@ from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
 from lobqr19 import views as lobqr19_views
+from lobreg19 import views as lobreg19_views
 
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
@@ -22,6 +23,7 @@ urlpatterns = [
     # path("projects/", lobqr19_views.render_projects),
     # path("my-projects/<client_id>", lobqr19_views.client_projects),
     path("lobqr19/", lobqr19_views.create_qr2019, name="create_qr2019"),
+    path("lobreg19/", lobreg19_views.create_lobreg2019, name="create_lobreg2019"),
     # path("update-project/<project_id>", lobqr19_views.update_project),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
