@@ -151,6 +151,7 @@ typings/
 
 
 ### VisualStudioCode template
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -287,3 +288,8 @@ pecproto/media/
 .env
 .envs/*
 !.envs/.local/
+
+
+### Development Database
+
+db.sqlite3
